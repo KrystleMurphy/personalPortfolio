@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.Navbar {
+    background-color: var(--custom-black);
+    color: var(--custom-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 2%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.name {
+    /* font-size: 3rem; */
+    color: var(--custom-yellow);
+}
+
+.Navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    /* gap: 1rem; */
+
+}
+
+.Navbar a {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    gap: 2rem;
+}
+
+.Navbar li:active {
+    background-color: var(--custom-pink);
+    height: 100%;
+}
+
+.Navbar li:hover {
+    color: var(--custom-orange);
+    height: 100%;
+}
