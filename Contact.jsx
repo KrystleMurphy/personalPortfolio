@@ -40,8 +40,7 @@ export default function Contact() {
                   href="https://github.com/KrystleMurphy"
                   target="_blank"
                   className="btn rounded"
-                  style={{ backgroundColor: "var(--custom-blue)" }}
-                >
+                  style={{ backgroundColor: "var(--custom-blue)" }}>
                   <h5 className="card-title">
                     <FontAwesomeIcon icon={faGithub} size="3x" />
                   </h5>
@@ -55,7 +54,7 @@ export default function Contact() {
 
       <div className="p-3">
         <h2 className="">Or send me an email...</h2>
-        <div className="col-12 border rounded p-3">
+        <div className="col-12 border rounded p-3" style={{border: "1px solid var(--custom-blue)"}}>
           <form
             id="fs-frm"
             name="simple-contact-form"
@@ -72,7 +71,7 @@ export default function Contact() {
                   id="full-name"
                   className="form-control"
                   placeholder="First and Last"
-                  required
+                  required style={{border: "1px solid var(--custom-blue)"}}
                 />
               </div>
               <div className="form-group m-3">
@@ -84,6 +83,7 @@ export default function Contact() {
                   className="form-control"
                   placeholder="email@domain.tld"
                   required
+                  style={{border: "1px solid var(--custom-blue)"}}
                 />
               </div>
               <div className="form-group m-3">
@@ -94,7 +94,7 @@ export default function Contact() {
                   id="message"
                   className="form-control"
                   placeholder="Your message here"
-                  required
+                  required style={{border: "1px solid var(--custom-blue)"}}
                 ></textarea>
               </div>
               <input

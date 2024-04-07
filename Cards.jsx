@@ -55,7 +55,7 @@ const Cards = () => {
     <div className="row">
       {cardData.map((card) => (
         <div key={card.id} className="col-md-4 p-3">
-          <div className="card h-100">
+          <div className="card border-0 h-100">
           <img
   src={card.imageUrl}
   className="card-img-top"
