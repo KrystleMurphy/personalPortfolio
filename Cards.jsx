@@ -54,7 +54,7 @@ const Cards = () => {
   return (
     <div className="row">
       {cardData.map((card) => (
-        <div key={card.id} className="col-md-4">
+        <div key={card.id} className="col-md-4 p-3">
           <div className="card h-100">
           <img
   src={card.imageUrl}
@@ -79,9 +79,9 @@ const Cards = () => {
                   <img src={card.icon} alt="Icon" />
                 </div> */}
                 <div className="col-12 text-center">
-                  <a href={card.buttonUrl} className="btn btn-primary w-100">
-                    {card.buttonText}
-                  </a>
+                <a href={card.buttonUrl} className="btn w-100" style={{ backgroundColor: "var(--custom-blue)", color: "black", border: "none", borderRadius: 0 }}>
+  {card.buttonText}
+</a>
                 </div>
               </div>
             </div>

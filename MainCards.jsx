@@ -48,13 +48,10 @@ const MainCards = () => {
                 {card.content.substring(0, 100)}
               </p>
               <div className="row align-items-center">
-                {/* <div className="col-6 text-center">
-                  <img src={card.icon} alt="Icon" />
-                </div> */}
                 <div className="col-12 text-center">
-                  <a href={card.buttonUrl} className="btn btn-primary w-100">
-                    {card.buttonText} 
-                  </a>
+                <a href={card.buttonUrl} className="btn w-100" style={{ backgroundColor: "var(--custom-blue)", color: "black", border: "none", borderRadius: 0 }}>
+  {card.buttonText}
+</a>
                 </div>
               </div>
             </div>

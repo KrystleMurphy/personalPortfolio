@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as bootstrap from "bootstrap";
-
+import "./index.css";
+import "./Navbar.css";
 export default function Home() {
   return (
 

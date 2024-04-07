@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faBootstrap, faHtml5, faCss3, faJs, faNode, faGitAlt, faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
 
+import "./Navbar.css";
+import "./index.css";
+
 function Navbar() {
   return (
     <nav className="Navbar w-100">
