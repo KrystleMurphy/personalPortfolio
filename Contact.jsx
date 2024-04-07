@@ -13,16 +13,16 @@ export default function Contact() {
           <h1 className="pt-3">Get in Touch</h1>
         </div>
 
-        <div class="row d-flex justify-content-center">
-          <div class="col-2 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-body">
+        <div className="row d-flex justify-content-center">
+          <div className="col-2 mb-3 mb-sm-0">
+            <div className="card">
+              <div className="card-body">
                 <a
                   href="https://www.linkedin.com/in/krystle-murphy/"
                   target="_blank"
-                  class="btn rounded"
+                  className="btn rounded"
                 >
-                  <h5 class="card-title">
+                  <h5 className="card-title">
                     <FontAwesomeIcon icon={faLinkedin} size="3x" />
                   </h5>
                   Visit Profile
@@ -30,15 +30,15 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <div class="card">
-              <div class="card-body">
+          <div className="col-2">
+            <div className="card">
+              <div className="card-body">
                 <a
                   href="https://github.com/KrystleMurphy"
                   target="_blank"
-                  class="btn rounded"
+                  className="btn rounded"
                 >
-                  <h5 class="card-title">
+                  <h5 className="card-title">
                     <FontAwesomeIcon icon={faGithub} size="3x" />
                   </h5>
                   Take a look

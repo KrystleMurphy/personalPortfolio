@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
-import Projects from "./Pages/Projects";
-import Contact from "./Pages/Contact";
-import Home from "./Pages/Home";
+import Projects from "./Projects";
+import Contact from "./Contact";
+import Home from "./Home";
 import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as bootstrap from "bootstrap";
