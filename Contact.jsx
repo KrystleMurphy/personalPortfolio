@@ -21,6 +21,9 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/krystle-murphy/"
                   target="_blank"
                   className="btn rounded"
+                  style={{
+                    backgroundColor: "var(--custom-blue)",
+                  }}
                 >
                   <h5 className="card-title">
                     <FontAwesomeIcon icon={faLinkedin} size="3x" />
@@ -37,6 +40,7 @@ export default function Contact() {
                   href="https://github.com/KrystleMurphy"
                   target="_blank"
                   className="btn rounded"
+                  style={{ backgroundColor: "var(--custom-blue)" }}
                 >
                   <h5 className="card-title">
                     <FontAwesomeIcon icon={faGithub} size="3x" />
@@ -101,7 +105,7 @@ export default function Contact() {
               />
             </fieldset>
             <div className="d-flex justify-content-end mt-3">
-              <input type="submit" className="btn rounded" value="Send" />
+              <input type="submit" className="btn rounded" value="Send" style={{ backgroundColor: "var(--custom-blue)" }}/>
             </div>
           </form>
         </div>
