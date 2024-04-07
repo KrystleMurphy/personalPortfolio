@@ -5,6 +5,7 @@ import Home from "./Home";
 import { Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as bootstrap from "bootstrap";
+import "./index.css";
 
 function App() {
   return (
