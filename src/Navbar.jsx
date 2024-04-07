@@ -55,7 +55,7 @@ function Navbar() {
       <ul>
         <CustomLink
           className="nav-link"
-          to="/Home"
+          to="/"
           onClick={() => handleCustomLinkClick("home")}
         >
           Home
