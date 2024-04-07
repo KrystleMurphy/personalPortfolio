@@ -1,49 +1,71 @@
 import React, { useState } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import * as bootstrap from 'bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css";
+import * as bootstrap from "bootstrap";
 import "./Navbar.css";
 import "./index.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import { faJs } from '@fortawesome/free-brands-svg-icons';
+import { faNode } from '@fortawesome/free-brands-svg-icons';
+import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
+import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
 
 function CustomLink({ to, children, onClick, background }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 
   return (
-    <li style={{ backgroundColor: background }} className={isActive ? "active" : ""}>
-      <Link to={to} onClick={onClick}>{children}</Link>
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} onClick={onClick}>
+        {children}
+      </Link>
     </li>
   );
 }
 
 function Navbar() {
-  const [ulBackgrounds, setUlBackgrounds] = useState({
-    home: 'grey',
-    projects: 'grey',
-    contact: 'grey'
-  });
-
-  const handleCustomLinkClick = (link) => {
-    // Reset all background colors
-    const updatedBackgrounds = {
-      home: 'grey',
-      projects: 'grey',
-      contact: 'grey'
-    };
-
-    // Set the background color of the clicked link to 'lightblue'
-    updatedBackgrounds[link] = 'var(--custom-yellow)';
-
-    setUlBackgrounds(updatedBackgrounds);
-  };
-
   return (
-    <nav className="Navbar vh-20 display-6">
-      <Link to="/Home" className="name display-5">Krystle Murphy</Link>
+    <nav className="Navbar w-100">
+      <Link to="/Home" className="name">
+        Krystle Murphy
+      </Link>
+      <div className="icons d-flex justify-content-center align-items-center gap-3">
+        {" "}
+        <FontAwesomeIcon icon={faReact} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faBootstrap} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faHtml5} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faCss3} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faJs} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faNode} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faGitAlt} size="2x" style={{ opacity: 0.9 }}/>
+        <FontAwesomeIcon icon={faFreeCodeCamp} size="2x" style={{ opacity: 0.9 }}/>
+      </div>
       <ul>
-        <CustomLink to="/Home" onClick={() => handleCustomLinkClick('home')} background={ulBackgrounds.home}>Home</CustomLink>
-        <CustomLink to="/projects" onClick={() => handleCustomLinkClick('projects')} background={ulBackgrounds.projects}>Projects</CustomLink>
-        <CustomLink to="/contact" onClick={() => handleCustomLinkClick('contact')} background={ulBackgrounds.contact}>Contact</CustomLink>
+        <CustomLink
+          className="nav-link"
+          to="/Home"
+          onClick={() => handleCustomLinkClick("home")}
+        >
+          Home
+        </CustomLink>
+        <CustomLink
+          className="nav-link"
+          to="/projects"
+          onClick={() => handleCustomLinkClick("projects")}
+        >
+          Projects
+        </CustomLink>
+        <CustomLink
+          className="nav-link"
+          to="/contact"
+          onClick={() => handleCustomLinkClick("contact")}
+        >
+          Contact
+        </CustomLink>
       </ul>
     </nav>
   );

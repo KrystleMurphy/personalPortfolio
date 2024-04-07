@@ -7,20 +7,15 @@ body {
 }
 
 .Navbar {
-    background-color: var(--custom-black);
-    color: var(--custom-yellow);
+    background-color: var(--custom-blue);
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 2%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    /* padding: 2%; */
+    /* font-size: 2rem; */
 }
 
-.name {
-    /* font-size: 3rem; */
-    color: var(--custom-yellow);
-}
 
 .Navbar ul {
     padding: 0;
@@ -28,6 +23,7 @@ body {
     list-style: none;
     display: flex;
     /* gap: 1rem; */
+    font-weight:lighter;
 
 }
 
@@ -36,16 +32,35 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: .25rem;
-    gap: 2rem;
+    padding: 1rem;
+    /* gap: 2rem; */
+    color: black;
 }
 
-.Navbar li:active {
-    background-color: var(--custom-pink);
+.name {
+    font-size: 2rem;
+    font-weight: lighter;
+    font-stretch: wider;
+}
+
+/* .Navbar li:active {
+    background-color: var(--custom-yellow);
     height: 100%;
+    text-decoration: underline;
 }
 
 .Navbar li:hover {
     color: var(--custom-orange);
     height: 100%;
+} */
+
+.active a {
+    background-color: var(--custom-pink);
+    color: black;
+    font-weight: 400;
+    border-left: 1px solid var(--custom-black);
+    border-right: 1px solid var(--custom-black);
+    transition: background-color 0.5s ease;
 }
+
+;
