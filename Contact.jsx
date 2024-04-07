@@ -15,7 +15,7 @@ export default function Contact() {
 
         <div className="row d-flex justify-content-center">
           <div className="col-2 mb-3 mb-sm-0">
-            <div className="card">
+            <div className="card border-0">
               <div className="card-body">
                 <a
                   href="https://www.linkedin.com/in/krystle-murphy/"
@@ -34,7 +34,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="col-2">
-            <div className="card">
+            <div className="card border-0">
               <div className="card-body">
                 <a
                   href="https://github.com/KrystleMurphy"
