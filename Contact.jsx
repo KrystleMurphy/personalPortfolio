@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-
+import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
     <>
@@ -55,61 +55,10 @@ export default function Contact() {
       <div className="p-3">
         <h2 className="">Or send me an email...</h2>
         <div className="col-12 border rounded p-3" style={{border: "1px solid var(--custom-blue)"}}>
-          <form
-            id="fs-frm"
-            name="simple-contact-form"
-            acceptCharset="utf-8"
-            action="https://formspree.io/f/mvoeqbbg"
-            method="post"
-          >
-            <fieldset id="fs-frm-inputs">
-              <div className="form-group m-3">
-                <label htmlFor="full-name">Full Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="full-name"
-                  className="form-control"
-                  placeholder="First and Last"
-                  required style={{border: "1px solid var(--custom-blue)"}}
-                />
-              </div>
-              <div className="form-group m-3">
-                <label htmlFor="email-address">Email Address</label>
-                <input
-                  type="email"
-                  name="_replyto"
-                  id="email-address"
-                  className="form-control"
-                  placeholder="email@domain.tld"
-                  required
-                  style={{border: "1px solid var(--custom-blue)"}}
-                />
-              </div>
-              <div className="form-group m-3">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  rows="5"
-                  name="message"
-                  id="message"
-                  className="form-control"
-                  placeholder="Your message here"
-                  required style={{border: "1px solid var(--custom-blue)"}}
-                ></textarea>
-              </div>
-              <input
-                type="hidden"
-                name="_subject"
-                id="email-subject"
-                value="Contact Form Submission"
-              />
-            </fieldset>
-            <div className="d-flex justify-content-end mt-3">
-              <input type="submit" className="btn rounded" value="Send" style={{ backgroundColor: "var(--custom-blue)" }}/>
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </div>
     </>
   );
 }
+
