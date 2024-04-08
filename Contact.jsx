@@ -52,9 +52,8 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="p-3">
-        <h2 className="">Or send me an email...</h2>
-        <div className="col-12 border rounded p-3" style={{border: "1px solid var(--custom-blue)"}}>
+      <div className="p-3 d-flex justify-content-center align-items-center">
+        <div className="row col-6 rounded p-3" style={{border: "1px solid var(--custom-blue)"}}>
           <ContactForm />
         </div>
       </div>

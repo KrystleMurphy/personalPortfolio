@@ -7,10 +7,10 @@ function ContactForm() {
       return <p>Thanks for reaching out! I will be in contact soon</p>;
   }
   return (
+    
       <form onSubmit={handleSubmit}>
         <div className="row p-3">
-      <label htmlFor="email">
-        Email Address:
+      <label htmlFor="email" className="">Email Address:
       </label>
 
       <input
@@ -18,6 +18,8 @@ function ContactForm() {
         type="email" 
         name="email"
         placeholder='MyEmail@example.com'
+        className='rounded'
+        style={{border: "1px solid var(--custom-blue)"}}
       />
       <ValidationError 
         prefix="Email" 
@@ -31,6 +33,8 @@ function ContactForm() {
         id="message"
         name="message"
         placeholder='Hi there...'
+        className='rounded'
+        style={{border: "1px solid var(--custom-blue)"}}
       />
       <ValidationError 
         prefix="Message" 
