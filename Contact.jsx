@@ -5,6 +5,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import ContactForm from "./ContactForm";
+import "./index.css";
+import "./Navbar.css";
+import ByMeACoffee from "./ByMeACoffee";
+// import ByMeACoffee from "./ByMeACoffee";
 export default function Contact() {
   return (
     <>
@@ -33,6 +37,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
+
+
           <div className="col-2">
             <div className="card border-0">
               <div className="card-body">
@@ -52,6 +58,9 @@ export default function Contact() {
         </div>
       </div>
 
+      <div className="row justify-content-center align-items-center">
+<ByMeACoffee />
+</div>
       <div className="p-3 d-flex justify-content-center align-items-center">
         <div className="row col-6 rounded p-3" style={{border: "1px solid var(--custom-blue)"}}>
           <ContactForm />
