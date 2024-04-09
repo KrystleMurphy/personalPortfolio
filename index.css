@@ -41,6 +41,7 @@ body {
   color: black;
   border: none;
   border-radius: 0;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -48,6 +49,7 @@ body {
   color: black;
   border: none;
   border-radius: 0;
+  text-decoration: none;
 }
 
 a {
@@ -55,6 +57,7 @@ a {
   color: black;
   border: none;
   border-radius: 0;
+  text-decoration: none; !important
 }
 
 a:hover {
@@ -62,4 +65,5 @@ a:hover {
   color: black;
   border: none;
   border-radius: 0;
+  text-decoration: none;
 }
