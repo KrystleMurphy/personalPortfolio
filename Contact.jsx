@@ -17,7 +17,24 @@ export default function Contact() {
           <h1 className="pt-3">Get in Touch</h1>
         </div>
 
+
         <div className="row d-flex justify-content-center">
+          <div className="col-2">
+              <div className="card border-0 card-body">
+                <a
+                  href="https://www.linkedin.com/in/krystle-murphy/"
+                  target="_blank"
+                  className="rounded text-black p-3"
+                >
+                  <h5 className="card-title">
+                    <FontAwesomeIcon icon={faLinkedin} size="3x" />
+                  </h5>
+                  Visit Profile
+                </a>
+            </div>
+          </div>
+
+        {/* <div className="row d-flex justify-content-center">
           <div className="col-2 mb-3 mb-sm-0">
             <div className="card border-0">
               <div className="card-body">
@@ -36,7 +53,7 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
           <div className="col-2">
