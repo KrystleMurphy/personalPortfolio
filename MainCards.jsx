@@ -49,7 +49,7 @@ const MainCards = () => {
               </p>
               <div className="row align-items-center">
                 <div className="col-12 text-center">
-                <a href={card.buttonUrl} className="btn w-100" style={{ backgroundColor: "var(--custom-blue)", color: "black", border: "none", borderRadius: 0 }}>
+                <a href={card.buttonUrl} className="w-100 text-decoration-none text-black p-3 rounded">
   {card.buttonText}
 </a>
                 </div>
