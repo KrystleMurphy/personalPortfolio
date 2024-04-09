@@ -79,7 +79,7 @@ const Cards = () => {
                   <img src={card.icon} alt="Icon" />
                 </div> */}
                 <div className="col-12 text-center">
-                <a href={card.buttonUrl} className="btn w-100" style={{ backgroundColor: "var(--custom-blue)", color: "black", border: "none", borderRadius: 0 }}>
+                <a href={card.buttonUrl} className="text-black text-decoration-none rounded w-100 p-3">
   {card.buttonText}
 </a>
                 </div>

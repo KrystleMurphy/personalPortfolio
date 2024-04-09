@@ -46,7 +46,7 @@ function ContactForm() {
       </div>
       
       <div className="row p-3 justify-content-center">
-        <a className="rounded text-black" type="submit" disabled={state.submitting}>
+        <a className="rounded text-black text-decoration-none" type="submit" disabled={state.submitting}>
           Submit
         </a>
       </div>

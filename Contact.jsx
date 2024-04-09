@@ -22,7 +22,7 @@ export default function Contact() {
               <a
                 href="https://www.linkedin.com/in/krystle-murphy/"
                 target="_blank"
-                className="rounded text-black p-3 d-block"
+                className="rounded text-black p-3 d-block text-decoration-none"
               >
                 <h5 className="card-title">
                   <FontAwesomeIcon icon={faLinkedin} size="3x" />
@@ -36,7 +36,7 @@ export default function Contact() {
               <a
                 href="https://github.com/KrystleMurphy"
                 target="_blank"
-                className="rounded text-black p-3 d-block"
+                className="rounded text-black p-3 d-block text-decoration-none"
               >
                 <h5 className="card-title">
                   <FontAwesomeIcon icon={faGithub} size="3x" />

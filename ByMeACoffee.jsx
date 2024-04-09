@@ -13,7 +13,7 @@ function ByMeACoffee() {
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.buymeacoffee.com/krystlemurphy"
-          className="p-3 rounded text-black"
+          className="p-3 rounded text-black text-decoration-none"
         >
           <img
             src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
