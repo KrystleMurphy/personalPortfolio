@@ -9,49 +9,54 @@ function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="row p-3">
-        <label htmlFor="email" className="col-3">
+        <label htmlFor="email" className="col-12 col-md-3">
           Email Address:
         </label>
-        <input
-          id="email"
-          type="email" 
-          name="email"
-          placeholder='MyEmail@example.com'
-          className='rounded col-9' // Adjusted the input width
-          style={{border: "1px solid var(--custom-blue)"}}
-        />
-        <ValidationError 
-          prefix="Email" 
-          field="email"
-          errors={state.errors}
-        />
+        <div className="col-12 col-md-9">
+          <input
+            id="email"
+            type="email" 
+            name="email"
+            placeholder='MyEmail@example.com'
+            className='rounded w-100' // Adjusted the input width
+            style={{border: "1px solid var(--custom-blue)"}}
+          />
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
+        </div>
       </div>
 
       <div className="row p-3">
-        <label htmlFor="message" className="col-3">
+        <label htmlFor="message" className="col-12 col-md-3">
           Message:
         </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder='Hi there...'
-          className='rounded col-9' // Adjusted the textarea width
-          style={{border: "1px solid var(--custom-blue)"}}
-        />
-        <ValidationError 
-          prefix="Message" 
-          field="message"
-          errors={state.errors}
-        />
+        <div className="col-12 col-md-9">
+          <textarea
+            id="message"
+            name="message"
+            placeholder='Hi there...'
+            className='rounded w-100' // Adjusted the textarea width
+            style={{border: "1px solid var(--custom-blue)"}}
+          />
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
+        </div>
       </div>
       
       <div className="row p-3 justify-content-center">
-        <a className="rounded text-black text-decoration-none" type="submit" disabled={state.submitting}>
+        <button className="btn btn-primary rounded" type="submit" disabled={state.submitting}>
           Submit
-        </a>
+        </button>
       </div>
     </form>
   );
 }
 
 export default ContactForm;
+

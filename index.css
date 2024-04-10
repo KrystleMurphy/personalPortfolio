@@ -1,3 +1,52 @@
+/* Navbar styling */
+.Navbar {
+  background-color: var(--custom-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+.Navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  font-weight: lighter;
+}
+
+.Navbar a {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: black;
+}
+
+/* Responsive styling for Navbar */
+@media (max-width: 767px) {
+  .Navbar {
+    background-color: var(--custom-blue); /* Ensure the Navbar retains its color */
+  }
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-stretch: wider;
+}
+
+.active a {
+  background-color: var(--custom-pink);
+  color: black;
+  font-weight: 400;
+  border-left: 1px solid var(--custom-black);
+  border-right: 1px solid var(--custom-black);
+  transition: background-color 0.5s ease;
+}
+
+/* General styling */
 :root {
   --custom-blue: #b9d7dd;
   --custom-pink: #ece1e8;
@@ -6,26 +55,10 @@
   --custom-orange: #e2cab1;
   --custom-black: #000000;
   --light: white;
-
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
   background-color: var(--light);
-}
-
-
-.content {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* height: 65vh; */
-  /* border-color: var(--custom-blue); */
-  /* border-style: solid; */
-  /* border-width: 5px; */
-  /* width: 100%; */
-  /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); */
 }
 
 .card {
@@ -57,11 +90,11 @@ a {
   color: black;
   border: none;
   border-radius: 0;
-  text-decoration: none; !important
+  text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--custom-pink);
+  background-color: var(--custom-orange);
   color: black;
   border: none;
   border-radius: 0;

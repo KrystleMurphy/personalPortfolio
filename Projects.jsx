@@ -1,13 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import * as bootstrap from "bootstrap";
+
 import Cards from "./Cards";
 import MainCards from "./MainCards";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import "./index.css";
-import "./Navbar.css";
 
 export default function Projects() {
   return (
