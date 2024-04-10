@@ -5,7 +5,7 @@ import { faReact, faBootstrap, faHtml5, faCss3, faJs, faNode, faGitAlt, faFreeCo
 
 function Navbar() {
   return (
-    <nav className="Navbar navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="Navbar navbar navbar-expand-lg">
       <Link to="/" className="Navbar navbar-brand">
         Krystle Murphy
       </Link>
