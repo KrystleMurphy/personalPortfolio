@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
+  padding: 0;
 }
 
 .Navbar ul {
@@ -94,7 +95,7 @@ a {
 }
 
 a:hover {
-  background-color: var(--custom-orange);
+  background-color: var(--custom-pink);
   color: black;
   border: none;
   border-radius: 0;
