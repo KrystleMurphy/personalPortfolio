@@ -29,9 +29,9 @@ function Navbar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="Navbar collapse navbar-collapse" id="navbarNav">
+      <div className="Navbar collapse navbar-collapse align-items-center justify-content-center" id="navbarNav">
         <div className="d-none d-lg-block">
-        <div className="icons d-flex justify-content-center align-items-center gap-3 ">
+        <div className="icons d-flex gap-3 ">
           <FontAwesomeIcon icon={faReact} size="2x" style={{ opacity: 0.9 }} />
           <FontAwesomeIcon
             icon={faBootstrap}
@@ -50,7 +50,7 @@ function Navbar() {
           />
         </div>
         </div>
-        <ul className="Navbar navbar-nav ml-auto">
+        <ul className="Navbar navbar-nav ml-auto name">
           <li className="nav-item">
             <Link className="nav-link" to="/">
               Home

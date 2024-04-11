@@ -25,6 +25,8 @@
   color: black;
 }
 
+
+
 /* Responsive styling for Navbar */
 @media (max-width: 767px) {
   .Navbar {
