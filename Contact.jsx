@@ -6,6 +6,7 @@ import ContactForm from "./ContactForm";
 import ByMeACoffee from "./ByMeACoffee";
 import "./index.css";
 import "./Navbar.css";
+import DownloadCV from "./DownloadCV";
 
 export default function Contact() {
   return (
@@ -13,6 +14,11 @@ export default function Contact() {
       <div className="row">
         <div className="col text-center">
           <h1 className="pt-3">Get in Touch</h1>
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="col text-center p-3">
+          <DownloadCV />
         </div>
       </div>
       <div className="row justify-content-center">

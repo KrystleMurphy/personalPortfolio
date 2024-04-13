@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadCV from "./DownloadCV";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
 
           <br />
           <h6>Take a look around... this app was crafted with React + Vite.</h6>
+          <div>
+            <DownloadCV />
+          </div>
         </div>
       </div>
     </div>

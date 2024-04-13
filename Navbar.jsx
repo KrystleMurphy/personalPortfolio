@@ -11,6 +11,7 @@ import {
   faGitAlt,
   faFreeCodeCamp,
 } from "@fortawesome/free-brands-svg-icons";
+import DownloadCV from "./DownloadCV";
 
 function Navbar() {
   return (
